@@ -8,7 +8,7 @@ int main(void) {
         // Second term is 2. We ignore the 1st term
         term = first + second; // 1 + 1 = 2
 
-        // Check if 2 is even
+        // Check if term is even, in this case it's nth = 2.
         if (term % 2 == 0)
             sum += term; // Add to sum if even
 
