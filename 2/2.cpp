@@ -5,13 +5,17 @@ int main(void) {
 
     while (term <= 4000000) 
     {
-        term = first + second;
+        // Second term is 2. We ignore the 1st term
+        term = first + second; // 1 + 1 = 2
 
+        // Check if 2 is even
         if (term % 2 == 0)
-            sum += term;
+            sum += term; // Add to sum if even
 
-        first = second;
-        second = term;
+        first = second; // Initialize the first term with the second term - first = 1
+        second = term; // Initialize the second term with the last term. - second = 2
+
+        // New term would be term = 1 + 2 = 3. Then repeat.
     }
 
     std::cout << sum;
